@@ -1,0 +1,21 @@
+.add-todo {
+    margin-top: 20px;
+}
+
+.add-todo input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 200px;
+    margin-right: 10px;
+    
+}
+.add-todo input::placeholder {
+    color: white;
+  }
+  
+
+.add-todo button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

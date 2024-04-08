@@ -1,0 +1,129 @@
+
+.todo-item {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 15px;
+    width: 100%; 
+}
+
+.todo-header, .todo-body, .todo-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+.todo-header {
+    justify-content: start;
+    position: relative;
+}
+
+.todo-title {
+    
+    transition: color 0.3s ease;
+    text-transform: capitalize;
+}
+
+ .completed {
+    color: green;
+    text-decoration: line-through; 
+}
+
+.todo-checkbox {
+    margin-right: 10px; 
+}
+
+
+.todo-description-popup {
+    display: none;
+    position: absolute;
+    background-color: #121212;
+    border: solid white 2px;
+    border-radius: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 14px;
+    z-index: 1;
+    top: -30%;
+    right:60%;
+    transform: translateX(-50%);
+    color: white;
+    text-transform: capitalize;
+  }
+
+  
+  .todo-header:hover .todo-description-popup {
+    display: block;
+  }
+  
+  
+
+.delete-btn {
+
+   
+    background-color: brown; 
+    width: 100px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+}
+
+
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px; 
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.custom-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px; 
+}
+
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: green;
+}
+
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+
+.custom-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+

@@ -1,0 +1,95 @@
+div {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.title {
+    background-color: #232221;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6px;
+}
+h2, h1{
+    color: #fab805;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+   
+}
+form {
+    width: 90%;
+    max-width: 400px;
+    background-image: url("../../img/todobanner.jpg");
+    background-color: #1e1e1e; 
+    background-size: cover; 
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form {
+    position: relative; 
+    
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(66, 65, 65, 0.5); 
+    border-radius: 8px; 
+    z-index: 0; 
+}
+
+input, button, .success-message, .error-message, h2 {
+    position: relative; 
+    z-index: 1;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.success-message, .error-message {
+    color: #76ff03;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #ff1744; 
+}
+@media (min-width: 768px) {
+   
+
+    form {
+        margin: 20px;
+    }
+}

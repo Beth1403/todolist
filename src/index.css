@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Nova Round', 'Roboto';
+    background-color: #121212; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#root {
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.logout {
+    margin-top: 2rem;
+}
+
+
+
